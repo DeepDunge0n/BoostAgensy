@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+body{
+    background-image: url("./images/tik-tok-fon-1.webp");
+    background-repeat: repeat;
+    background-size: 100%;
+    background-color: blueviolet;
+    color: rgb(255, 255, 255);
+}
+.title{
+    min-width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 64px;
+}
+.title img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding-top: 40px;
+}
+span{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
+.main-container{
+    display: flex;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+.item{
+    width: 350px;
+    margin-left: 10%;
+    font-size: 32px;
+    text-align: center;
+}
+.item img{
+    width: 200px;
+    height: 200px;
+}
+.email-form{
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.email-form h2{
+    font-size: 48px;
+}
+.email-form form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.verif{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.verif img{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
