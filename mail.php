@@ -14,7 +14,7 @@
     $headers = "From: $from\r\nReply-to: $from\r\nContent-type:text/plain; charset=utf-8\r\n";
 
     if(mail($to, $subject, $message, $headers)){
-    header('Location: http://sitedan/');
+    header('Location: https://boostagency.netlify.app/');
     exit();
     }
 
