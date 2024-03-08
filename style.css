@@ -93,6 +93,9 @@ button{
     padding-bottom: 30px;
 }
 @media (max-width: 1000px){
+    body{
+        background-size: cover;
+    }
     .title{
         min-width: 100%;
         justify-content: center;
