@@ -58,8 +58,7 @@ span{
     margin-bottom: 50px;
     font-size: 48px;
 }
-.email-form form{
-    margin-top: 50px;
+.email-inputs{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +74,7 @@ button{
     width: 200px;
     margin-bottom: 20px;
     border-radius: 10px;
+    cursor: pointer;
 }
 .verif{
     margin-top: 60px;
@@ -86,4 +86,54 @@ button{
     height: 40px;
     margin-left: 30px;
     padding-bottom: 30px;
+}
+@media (max-width: 1000px){
+    .title{
+        min-width: 100%;
+        justify-content: center;
+        display: flex;
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .title img{
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding-top: 10px;
+    }
+    span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        margin-top: 10px;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    .item{
+        width: 350px;
+        margin-top: 10%;
+        font-size: 22px;
+        text-align: center;
+    }
+    .email-form h2{
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .verif{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .verif img{
+        width: 40px;
+        height: 40px;
+        margin-left: 30px;
+        padding-bottom: 30px;
+    }
 }
