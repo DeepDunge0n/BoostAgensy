@@ -55,6 +55,7 @@ span{
     margin-top: 100px;
 }
 .email-form h2{
+    margin-bottom: 50px;
     font-size: 48px;
 }
 .email-form form{
@@ -64,6 +65,12 @@ span{
     align-items: center;
 }
 input{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+button{
     height: 30px;
     width: 200px;
     margin-bottom: 20px;
