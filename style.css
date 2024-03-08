@@ -32,6 +32,11 @@ span{
     justify-content: center;
     font-size: 48px;
 }
+.readyText{
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
 .main-container{
     display: flex;
     margin-right: 10%;

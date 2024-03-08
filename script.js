@@ -27,8 +27,11 @@ function sendMail() {
   codeInput.placeholder = "Enter code";
   const button = document.createElement("button");
   button.textContent = "Send";
+  button.id = 'codeButton';
   button.onclick = () => {
+    const emailInputs = document.getElementById("email-inputs");
     const code = document.getElementById("codeInput");
+    const button = document.getElementById('codeButton');
     let params = {
       code: code.value,
     };
@@ -41,7 +44,12 @@ function sendMail() {
         console.log(res.status);
       })
       .catch((err) => console.log(err));
-      
+    emailInputs.removeChild(code);
+    emailInputs.removeChild(button);
+    const readyText = document.createElement('p');
+    readyText.textContent = 'Sended!';
+    readyText.id = 'readyText';
+    emailInputs.appendChild(readyText);
   };
   emailInputs.appendChild(codeInput);
   emailInputs.appendChild(button);
